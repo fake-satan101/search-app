@@ -134,7 +134,7 @@ const Search = () => {
                 )}
                 onMouseLeave={(e) => (
                   e.currentTarget.style.transform = "scale(1)",
-                  e.currentTarget.style.backgroundColor = "white"
+                  e.currentTarget.style.backgroundColor = "#f9f9f9"
                 )
                 }
               >
