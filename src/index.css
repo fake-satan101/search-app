@@ -1,0 +1,55 @@
+body {
+  font-family:  "Varela Round";
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.app {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.app-header {
+  background-color: #282c34;
+  color: white;
+  padding: 10px;
+}
+
+.search-container {
+  margin: 20px 0;
+}
+
+.search-box {
+  width: 90%;
+  max-width: 400px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.filter-dropdown {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.results {
+  margin-top: 20px;
+}
+
+.result-item {
+  background: white;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: left;
+}
+
+@media (max-width: 600px) {
+  .search-box, .filter-dropdown {
+    width: 100%;
+    font-size: 14px;
+  }
+}
