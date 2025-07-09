@@ -17,6 +17,10 @@ body {
   color: white;
   padding: 10px;
 }
+li {
+  color: #ffffff;
+  text-shadow: #fbff00;
+}
 
 .search-container {
   margin: 20px 0;
