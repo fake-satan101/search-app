@@ -113,8 +113,7 @@ const Search = () => {
     return sampleData.filter((item) => {
       const matchesQuery =
         query === "" || item.title.toLowerCase().includes(query.toLowerCase());
-      const matchesGenre =
-        genre === "All" || item.genres.includes(genre);
+      const matchesGenre = genre === "All" || item.genres.includes(genre);
       const matchesTopic = topic === "All" || item.topic === topic;
       return matchesQuery && matchesGenre && matchesTopic;
     });
@@ -190,6 +189,7 @@ const Search = () => {
                   marginBottom: "10px",
                   border: "1px solid #ddd",
                   borderRadius: "5px",
+
                   transform: "scale(1)",
                   transition: "transform 0.3s ease",
                   cursor: "pointer",
@@ -199,14 +199,11 @@ const Search = () => {
                   height: "300px",
                   width: "100%",
                 }}
-                onMouseEnter={(e) => (
-                  e.currentTarget.style.transform = "scale(1.05)"
-                  
-                )}
-                onMouseLeave={(e) => (
-                  e.currentTarget.style.transform = "scale(1)"
-                  
-                )
+                onMouseEnter={(e) =>
+                  (e.currentTarget.style.transform = "scale(1.05)")
+                }
+                onMouseLeave={(e) =>
+                  (e.currentTarget.style.transform = "scale(1)")
                 }
               >
                 <h3>{item.title}</h3>
