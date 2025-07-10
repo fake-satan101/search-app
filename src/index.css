@@ -17,10 +17,7 @@ body {
   color: white;
   padding: 10px;
 }
-li {
-  color: #ffffff;
-  text-shadow: #fbff00;
-}
+
 
 .search-container {
   margin: 20px 0;
@@ -50,7 +47,10 @@ li {
   padding: 10px;
   text-align: left;
 }
-
+li {
+  color: #ffffff;
+  text-shadow: #fbff00;
+}
 @media (max-width: 600px) {
   .search-box, .filter-dropdown {
     width: 100%;
